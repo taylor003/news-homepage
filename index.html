@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="app.js" defer></script>
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+<!-- font-awsome -->
+<link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/5.14.0/css/all.min.css" 
+   />
+</head>
+
+<body>
+<script src="./app.js"></script>
+  <!-- nav -->
+  <header>
+      <!-- header -->
+      <div class="logo">
+        <a href="index.html" class="nav-logo">
+          <img src="./assets/images/logo.svg" alt="News Menu" />
+        </a>
+        </div>
+      
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+        <!-- links -->
+      <nav class="nav-link">
+        <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li>
+          <a href="new.html">New</a>
+        </li>
+        <li>
+          <a href="popular.html">Popular</a>
+        </li>
+        <li>
+          <a href="trending.html">Trending</a>
+        </li>
+        <li>
+          <a href="categories.html">Categories</a>
+        </li>
+        </ul>
+  </nav>
+</header>
+<script>
+hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function() {
+  navBar = document.querySelector(".nav-link");
+  navBar.classList.toggle("active");
+}
+</script>
+  <!-- nav-end -->
+    
+  <!--main elements-->
+<main class="page">
+  <div class="top">
+  <div class="read_a" id="read_a">  
+  <div class="read_me" id="read">
+    <img src="./assets/images/image-web-3-desktop.jpg" class="img" alt="desk_img">
+    <div class="bright">
+      <h1>The Bright Future of Web 3.0?</h1>
+      <div class="read-morelink">
+      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+      But is it really fulfilling its promise?</p>
+      <a href="index.html" class="btn">READ MORE</a>
+     </div>
+    </div>
+  </div>
+    <section class="new">
+      <div class="news_wrap">
+      <h1>New</h1>
+      <a href="#">
+      <h3>Hydrogen Vs Electric Cars</h3>
+      </a>
+      <p>Will hydrogen_fueled cars ever catch up to EVs?</p>
+      <b></b>
+
+      <hr>
+
+      <a href="#">
+      <h3>The Downside of AI Artistry</h3>
+      </a>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      <b></b>
+
+      <hr>
+
+      <a href="#">
+      <h3>Is VC Funding Drying Up?</h3>
+      </a>
+      <p>Private funding bt the VC firms in down 50% YOY. We take a look at what that means.
+      </p>
+      <b></b>
+    </div>
+    </section>
+  
+  </div>
+</div>
+
+<section class="bottom">
+  <div class="bottom_wrap">
+    <div class="bottom_options">
+      <div class="bottom_img"> 
+     <img src="./assets/images/image-retro-pcs.jpg" alt="retro pic">
+     </div>
+     <div class="bottom_grid">
+     <h2>01</h2>
+     <a href="#">
+     <h3>Reviving Retro PC's</h3>
+     </a>
+     <p>What happens when old PCs are given modern upgrade?</p>
+     </div>
+    </div>
+
+    <div class="bottom_options">
+     <div class="bottom_img">
+      <img src="./assets/images/image-top-laptops.jpg" alt="retro pic">
+      </div>
+     <div class="bottom_grid">
+     <h2>02</h2>
+     <a href="#">
+     <h3>Top 10 Laptops of 2022</h3>
+     </a>
+     <p>Our best picsk for various needs and budgets.</p>
+    </div>
+    </div>
+
+    <div class="bottom_options">
+      <div class="bottom_img">
+     <img src="./assets/images/image-gaming-growth.jpg" alt="retro pic" class="bottom_img">
+     </div>
+     <div class="bottom_grid">
+     <h2>03</h2>
+     <a href="#">
+     <h3>The Growth of Gaming</h2>
+      </a>
+     <p>How the pandemic has sparked fresh opportunities.</p>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
